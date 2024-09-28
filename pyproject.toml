@@ -1,0 +1,24 @@
+[project]
+name = "asynclcron"
+version = "0.0.1"
+authors = [
+  { name="Zhuo Wang", email="zhuowang10@gmail.com" },
+]
+description = "lightweight cron by asyncio"
+readme = "README.md"
+requires-python = ">=3.7, <4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "croniter>=3.0.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["asynclcron"]
+exclude = ["docs", "tests", "config", "logs", "venv", "build"]
+
+[project.urls]
+Homepage = "https://github.com/zhuowang10/asynclcron"
